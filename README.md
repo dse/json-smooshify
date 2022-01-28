@@ -65,7 +65,8 @@ The return value is a JSON-compatible string.
 
 ## Command-Line Utility
 
-Running the following will install a `smooshify` utility:
+Running the following will install a `smooshify` utility that takes
+JSON in and re-stringifies it:
 
     npm install -g @smallllama/json-smooshify
 
