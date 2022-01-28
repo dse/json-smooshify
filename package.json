@@ -12,7 +12,8 @@
   "keywords": [
     "json",
     "stringify",
-    "compact"
+    "compact",
+    "smooshify"
   ],
   "author": "dse@webonastick.com",
   "license": "ISC",
