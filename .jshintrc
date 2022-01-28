@@ -25,7 +25,7 @@
     "regexpu":          false,
     "shadow":           "inner",
     "singleGroups":     false,
-    "strict":           true,
+    "strict":           "global",
     "trailingcomma":    true,
     "undef":            true,
     "unused":           "vars",
