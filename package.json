@@ -2,11 +2,21 @@
   "name": "@smallllama/json-smooshify",
   "version": "1.0.0",
   "description": "Compact JSON output.",
-  "main": "lib/index.js",
+  "main": "lib/smooshify.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["json", "stringify", "compact"],
+  "bin": {
+    "smooshify": "bin/smooshify.js"
+  },
+  "keywords": [
+    "json",
+    "stringify",
+    "compact"
+  ],
   "author": "dse@webonastick.com",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "posix-getopt": "^1.2.1"
+  }
 }
