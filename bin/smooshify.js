@@ -5,12 +5,14 @@ const fs = require('fs');
 
 const smooshify = require('../lib/smooshify');
 
-const params = process.argv.slice(2);
-if (params.length === 0) {
-    smooshifyStdin();
-} else {
-    for (const filename of params) {
-        smooshifyFile(filename);
+function main() {
+    const params = process.argv.slice(2);
+    if (params.length === 0) {
+        smooshifyStdin();
+    } else {
+        for (const filename of params) {
+            smooshifyFile(filename);
+        }
     }
 }
 
@@ -20,4 +22,11 @@ function smooshifyStdin() {
 
 function smooshifyFile(filename) {
     console.log(smooshify(JSON.parse(fs.readFileSync(filename, 'utf-8'))));
+}
+
+try {
+    main();
+} catch (error) {
+    console.error(error.message);
+    process.exit(1);
 }
